@@ -1,63 +1,39 @@
-# Flutter E-Commerce App Template
+# E-commerce — Flutter Shop App
+
+A Flutter e-commerce UI app for Android and iOS, built on the free
+[FlutterShop template](https://github.com/abuanwar072/E-commerce-Complete-Flutter-UI)
+by [The Flutter Way (Abu Anwar)](https://www.flutterlibrary.com/templates/e-commerce-app).
+I used this project to study and adapt a large, well-organized Flutter UI codebase —
+the underlying screen designs and structure are the template author's work, not mine.
+
+This is a UI kit: there is no backend wired up. Screens use mock data, and it is meant to
+be connected to a backend of your choice (Firebase, WordPress, a custom API, ...).
 
 <p align="center">
-  <img src="readme%20image/Build%20you%20shop%20app%20in%20days.png" alt="Build you shop app in days" style="width: 500px; height: auto;">
+  <img src="readme image/Device_frame.png" alt="E-commerce app home and product details pages" style="width: 1100px; height: auto;">
 </p>
 
 <p align="center">
-  The FlutterShop template makes it easier to develop an e-commerce app using Flutter. It includes all the necessary pages to build a shopping app for both Android and iOS using flutter.
+  <img src="readme image/FlutterShop_Intro.gif" alt="App preview" style="width: 643px; height: auto;">
 </p>
 
-<!-- Buttons -->
-<p align="center">
-  <a href="https://cutt.ly/fefxdqE9" style="text-decoration: none;" target="_blank">
-    <img src="readme image/buy_now_btn.png" alt="Full template" style="margin-right: 32px; width: 170px; height: 50px;">
-  </a>
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://cutt.ly/1efxdynN" style="text-decoration: none;" target="_blank">
-    <img src="readme image/preview_btn.png" alt="Preview" style="width: 136px; height: 50px;">
-  </a>
-</p>
+## Stack
 
-<!-- Device image -->
-</br >
-</br >
-<p align="center">
-  <img src="readme image/Device_frame.png" alt="Ecommerce app Home, product details page" style="width: 1100px; height: auto;">
-</p>
-</br >
-</br >
+- Flutter (Dart SDK >= 3.2)
+- `flutter_svg`, `cached_network_image`, `flutter_rating_bar`, `animations`,
+  `form_field_validator`, `flutter_widget_from_html_core`, `url_launcher`
+- Light and dark themes, custom fonts (Plus Jakarta, Grandis Extended)
 
-This shop app template comes with 100+ screens. Some of these pages are Splash, Login, Signup, Home, Product, Search, Cart, Profile, Payment, Wallet, Order Tracking, and Order History. Additionally, all pages support both light and dark themes.You just need to connect the UI to your preferred backend, such as Firebase, WordPress, or your custom API. You can do anything you want with it.
+## Run locally
 
-<!-- Gif preview -->
-</br >
-</br >
-<p align="center">
-  <img src="readme image/FlutterShop_Intro.gif" alt="Build you shop app in days" style="width: 643px; height: auto;">
-</p>
-</br >
-</br >
+```bash
+flutter pub get
+flutter run
+```
 
-### Well organized project very easy to customize
+## Screens
 
-![FlutterShop E-commerce Template Project Structure](https://public-files.gumroad.com/v1kbfvdugf3urvw03qrqgmc5pl1c)
-
-<!-- Full preview -->
-</br >
-</br >
-<p align="center">
-  <img src="https://public-files.gumroad.com/m3v3lyyipbzczcws5gcuhpbkmczk" alt="Build you shop app in days" style="width: 100%; height: auto;">
-</p>
-
-### Loading is no longer boring [New update V1.1] [Doc](https://abu-anwar.gitbook.io/fluttershop-doc/custom-loading)
-
-The progress indicator that comes with Flutter, by default is okay in most places, but not in every place. Especially when you build an ecommerce app. This is why we have created a custom loading effect that boosts your user engagement even during the loading process. This kind of loading is common in popular apps like YouTube and LinkedIn. It's a small detail, but it makes a big difference.
-![FlutterShop Custom loading](https://public-files.gumroad.com/qqnmt9nu5677thkq1961tlwj405u)
-
-## Screens on the FlutterShop E-commerce Template
-
-As mentioned, this kit contains 100+ nicely crafted minimal screens that cover everything you need!👇
+The app includes 100+ screens across these areas (all with light/dark theme support):
 
 ### Onboarding
 
@@ -98,7 +74,6 @@ As mentioned, this kit contains 100+ nicely crafted minimal screens that cover e
   - Product size guide
   - Store Pickup Availability
   - Added to cart message
-  - Product gallery (Will be added soon)
 
 ### Main Page
 
@@ -107,23 +82,14 @@ As mentioned, this kit contains 100+ nicely crafted minimal screens that cover e
 - Kids product page
 - Brand page
 - Discover Page (Categories)
-  - Style 1
-  - Style 2 (Will be added soon)
-  - Style 3 (Will be added soon)
 - Bookmark products page
 
 ### Search
 
 - Recent search (Search history)
 - Search suggestions
-- Search filters
-  - Size filter
-  - Color filter
-  - Brand filter
-  - Price filter
-  - Sort by
-- Search results
-  - Product not found
+- Search filters (size, color, brand, price, sort)
+- Search results / product not found
 
 ### Cart
 
@@ -131,86 +97,37 @@ As mentioned, this kit contains 100+ nicely crafted minimal screens that cover e
 - Empty cart
 - Choose address
 - Review & payment
-- Checkout / Payment method
-  - Select card
-  - Pay with cash
-  - Use credit
+- Checkout / Payment method (select card, pay with cash, use credit)
 - Thanks for order
 - Add new card
-- Scan card (Will be added soon)
 
 ### Profile
 
-- Account
-  - Normal version
-  - Pro version
-  - Profile
-    - Edit profile
-  - Notifications
-    - Empty notification
-    - Enable notification
-    - Notification options
-  - Select Language
-  - Addresses
-    - Empty address
-    - Add new address
-  - Add number
-    - Verification code
-  - Selected location
-  - Payment
-    - Cards
-    - Empty payment
-  - Wallet
-    - Empty Wallet
-    - Wallet history
-  - Help & Chat (Support)
-    - Chat
-  - Preferences
+- Account (normal and pro versions)
+- Profile / edit profile
+- Notifications (empty, enable, options)
+- Select Language
+- Addresses (empty, add new)
+- Add number / verification code
+- Selected location
+- Payment (cards, empty payment)
+- Wallet (empty, history)
+- Help & Chat (support)
+- Preferences
 
 ### Order
 
-- Account Orders
-  - Processing orders
-    - Cancel order
-  - Canceled orders
-  - Delivered orders
-  - Return orders (Will be added soon)
-  - More screens added in that sector soon
-
-### Return & Request (Will be added soon)
-
-- Return order list
-- Empty return order
-- Return order
-- Return detail
+- Account Orders: processing (with cancel), canceled, delivered
 
 ### Error & Permission
 
-- Notification permission
-- No notification
-- Select language
-- No internet
-- Server error
+- Notification permission, no notification
+- No internet, server error
 - Location permissions
-- No search result
-- Empty order list
-- No Address found
-- Empty payment
-- Empty wallet
+- No search result, empty order list, no address, empty payment, empty wallet
 
-and MORE!!!! 🤩
+## Credits
 
-If you want to learn how to build ecommerce template on Flutter [watch the playlist on YouTube](https://youtube.com/playlist?list=PLxUBb2A_UUy8OlaNZpS2mfL8xpHcnd_Af), In the first video, we start by making a neat onboarding screen for our shopping app. This works on both Android and iOS because it's made with Flutter. In the next video, we tackle the 'Sign In' and 'Forgot Password' screens, adding some unique error messages. The third video covers the 'Sign Up' and OTP processes. The fourth one is fun – we create the main homepage. In the fifth, we dive into the product page, and in the sixth, we craft an order page with cool features like 'swipe to delete.' Finally, in the seventh video, we design the user profile page.
-
-Visit FlutterLibrary.com to Download the [Flutter e-commerce app template](https://www.flutterlibrary.com/templates/e-commerce-app) & other templates, and components.
-
-
-
-</br >
-</br >
-<!-- Buttons -->
-<p align="center">
-  <a href="https://app.gumroad.com/checkout?product=uxznc&option=B3wWhE6QH46cfm31C7jEmQ%3D%3D&quantity=1&referrer=https://github.com" style="text-decoration: none;" target="_blank">
-    <img src="readme image/buy_now_btn.png" alt="Full template" style="margin-right: 32px; width: 170px; height: 50px;">
-  </a>
-</p>
+- Template: [FlutterShop — E-commerce Complete Flutter UI](https://github.com/abuanwar072/E-commerce-Complete-Flutter-UI) by Abu Anwar / The Flutter Way
+- Docs: [FlutterShop documentation](https://abu-anwar.gitbook.io/fluttershop-doc)
+- Tutorial: [YouTube playlist on building the template](https://youtube.com/playlist?list=PLxUBb2A_UUy8OlaNZpS2mfL8xpHcnd_Af)
